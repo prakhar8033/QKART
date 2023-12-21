@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Test case suite Q-Kart application">
+    <listeners>
+        <listener class-name="QKART_TESTNG.ListenerClass"></listener>
+    </listeners>
+        <parameter name="username" value="testUser" />
+        <parameter name="password" value="abc@123" />
+        <test name = "Test execution using TESTNG - Sanity">
+            <groups>
+                <run>
+                    <include name="Sanity_test"></include>
+                </run>
+            </groups>
+            <parameter name="productName1" value="YONEX" />
+            <parameter name="productName3" value="YONEX Smash Badminton Racquet" />
+            <parameter name="productName4" value="Tan Leatherette Weekender Duffle" />
+            <parameter name="address" value="Addr line 1 addr Line 2 addr line 3" />
+            <parameter name="productName9" value="Stylecon 9 Seater RHS Sofa Set" />
+            <parameter name="quantity" value="60" />
+            <parameter name="productName10" value="YONEX Smash Badminton Racquet" />
+            <packages>
+                <package name="QKART_TESTNG"></package>
+            </packages>
+        </test> <!-- Test -->
+        <test name = "Test execution using TESTNG - Regression">
+            <groups>
+                <run>
+                    <include name="Regression_test"></include>
+                </run>
+            </groups>
+            <parameter name="productName2" value="Roadster" />
+            <parameter name="productName5" value="Xtend Smart Watch" />
+            <parameter name="productName6" value="Yarine Floor Lamp" />
+            <parameter name="productName7" value="Stylecon 9 Seater RHS Sofa Set" />
+            <parameter name="productName8" value="Xtend Smart Watch" />
+            <parameter name="contactUsername" value="crio user" />
+            <parameter name="contactEmail" value="criouser@gmail.com" />
+            <parameter name="contactContent" value="Testing the Contact Us page" />
+            <parameter name="productName10" value="YONEX Smash Badminton Racquet" />
+            <packages>
+                <package name="QKART_TESTNG"></package>
+            </packages>
+        </test> <!-- Test -->
+</suite> <!-- Suite -->

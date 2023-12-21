@@ -7,6 +7,7 @@ build
 app/chromedriver.log
 app/bin
 app/screenshots
+/__xmt__
 app/tmp
 HELP.md
 .gradle
@@ -40,5 +41,5 @@ out/
 /dist/
 /nbdist/
 /.nb-gradle/
-### VS Code ### - needed for debugging
+### VS Code ### 
 .vscode/
